@@ -1,1 +1,21 @@
+main {
+  padding: 30px;
+  /* setting font-size to 0 on the parent of a set of inline block elements removes white space between them.    */
+  font-size: 0;
+}
+
+.inner {
+	width:50%;
+	height:200px;
+  display: inline-block;
+  font-size: 0;
+}
+
+.inner-one {
+   background-color: green;
+}
+
+.inner-two {
+  background-color: blue;
+}
 
