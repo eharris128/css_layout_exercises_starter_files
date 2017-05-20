@@ -1,69 +1,66 @@
-/*
-Attempt at creating background image:
-
-.container {
-	background-image: url("images/outerspace_landscape.jpeg");
-	background-size: cover;
-	height: 100%;
-	background-position: center;
+body {
+  background: url(../images/outerspace_landscape.jpeg) no-repeat;
+  background-size: cover;
 }
 
-body, html{
-	height:100%;
-	margin: 0;
+main {
+	padding-top: 90px;
+	min-width: 1000px;
 }
-*/
 
-nav {
+.navigator-bar {
+	padding-left:60px;
+	padding-right: 60px;
 	position: fixed;
 	background-color: grey;
 	width: 100%;
-	padding-left:60px;
-	padding-right: 60px;
 	height:100px;
 	font-size:1.4em;
 }
 
-li {
+
+nav ul {
 	display: inline-block;
-	position:relative;
-	left:100px;
-	margin-top:15px;
 }
 
-li::after {
-	content: " |";
+nav li {
+	display: inline-block;
 }
 
-.logo {
-	display: inline-block;
-	position: absolute;
-	left: 60px;
-	width:70px;
-	height:70px;
-	margin-right:50px;
-	margin-top:15px;
+nav li::after {
+	content: "|";
+	margin-left: 5px;
+}
+
+nav .logo {
+	vertical-align: middle;
+	height:50px;
+	margin-bottom: 5px;
+	margin-top:5px;
+	border-radius:50%;
+	border: 1px solid black;
 }
 
 .green_box {
-	border: 10px dotted green;
-	position:absolute;
-	top:50%;
-	left:50%;
+	margin-top: 150px;
 	width: 600px;
 	height: 300px;
-	margin-top:-150px;
-	margin-left:-300px;
+	position: relative;
+	border: 10px dotted green;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cat_image, .dog_image {
+	position: absolute;
+	width: 200px;
 }
 
 .cat_image {
-	position: relative;
-	right:100px;
-	bottom:150px;
+	top: -90px;
+	left: -90px;
 }
-
 .dog_image {
-	position: relative;
-	left:200px;
-	top:200px;
+	bottom: -120px;
+	right: -60px;
 }
